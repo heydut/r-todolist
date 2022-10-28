@@ -29,7 +29,7 @@ const App = () => {
 
   const handleToggle = (id) => {
     let mapped = toDoList.map((task) => {
-      return task.id == id
+      return task.id === id
         ? { ...task, complete: !task.complete }
         : { ...task };
     });
